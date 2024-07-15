@@ -1,0 +1,11 @@
+#include<stdio.h>
+int sumOfEven(int);
+int sumOfEven(int n)
+{
+    int sum = 0 ;
+    if(n>0)
+    {
+        sum = n*2 + sumOfEven(n-1) ;
+    }
+    return sum ;
+}
